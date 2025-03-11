@@ -40,5 +40,6 @@ export default defineNuxtConfig({
 		}
 	},
 	srcDir: "src/",
-	ssr: false
+	ssr: false,
+	target: "static"
 })
