@@ -38,7 +38,7 @@ jobs:
       - name: Install dependencies
         run: bun install
       - name: Static HTML export with Nuxt
-        run: NUXT_APP_BASE_URL="${{ steps.pages.outputs.base_path }}" bun run generate
+        run: NUXT_APP_BASE_URL="/${{ github.event.repository.name }}/" bun run generate
       - name: Create .nojekyll file
         run: touch ./dist/.nojekyll
       - name: Upload artifact
