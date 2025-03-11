@@ -4,8 +4,8 @@ import Aura from "@primevue/themes/aura";
 export default defineNuxtConfig({
 	compatibilityDate: "2024-11-01",
 	app: {
-		baseURL: '/website-vue/',
-	}
+		baseURL: '/website-vue/'
+	},
 
 	css: [
 		"primeicons/primeicons.css",
